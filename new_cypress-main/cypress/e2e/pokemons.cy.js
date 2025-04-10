@@ -2,7 +2,7 @@ describe('Проверка покупки нового аватара', function
     it('e2e тест на покупку нового аватара для тренера', function () {   // название теста
          cy.visit('https://pokemonbattle.ru/');                          // переходим на сайт https://pokemonbattle.ru/
          cy.get('input[id="k_email"]').type('mixalyov98@yandex.ru');                   // вводим логин
-         cy.get('input[id="k_password"]').type('Grb@45!gH88r');               // вводим пароль
+         cy.get('input[id="k_password"]').type('Pokemon123');               // вводим пароль
          cy.get('button[type="submit"]').click();                // нажимаем кнопку Подтвердить
          cy.wait(2000);
          cy.get('.header_card_trainer').click();            // Клик в шапке на аву тренера
